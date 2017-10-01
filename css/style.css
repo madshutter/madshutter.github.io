@@ -1,0 +1,732 @@
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+* {
+
+  box-sizing: border-box; 
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+body {
+  display: inline-block;
+  max-width:1440px;
+  width:100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+}
+
+
+header {
+  max-width:1440px;
+  width:100%;
+  background: #000;
+  display: flex;
+  font-size: 1.5em;
+  padding: 0px;
+  flex: 1;
+  justify-content: space-between;
+  
+  background-size: cover;
+}
+
+
+
+
+/******************************************
+/* NAVIGATION
+/*******************************************/
+
+.navi_banner_logo {
+    background: url(../images/astrologo.jpg) no-repeat center;
+    width: 224px;
+    height: 24px;
+    padding: 30px;
+    float: left;
+
+}
+
+div .container {
+  display: flex;
+  justify-content: row;
+  padding: 0px 0px 15px 0px;
+}
+
+div #brand {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 15px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    position: sticky;
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 999999;
+  }
+
+nav {
+  background: #000000;
+  display: flex;
+}
+
+nav ul {
+  text-align:center;
+}
+
+nav ul li:hover {
+  background: #dca9f7;
+  color: #fff;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px;
+    float: left;
+    position: relative;
+    display: block;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+nav ul li ul {
+  width:200px;
+  font-size: 1em;
+  background:#dca9f7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+}
+
+nav ul li ul:hover {
+  width:200px;
+  font-size: 1em;
+  background:#dca9f7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  width:110px;
+  padding: 0px;
+}
+nav ul li ul li a {
+  display:block;
+  color:#fff;
+  padding: 0px;
+}
+nav ul li ul li:hover a {
+  background:#dca9f7;
+  color: #000;
+  padding: 0px;
+}
+nav ul li ul.fallback {
+  display:block;
+  padding: 0px;
+}
+nav ul li:hover ul.fallback {
+  display:block;
+  padding: 0px;
+}
+    
+.navigation {
+  padding: 0px;
+}
+
+.container {
+  padding: 0px;
+}
+
+#nav-container {
+  padding: 0px;
+}
+
+.nav-mobile {
+  padding: 0px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+ul {
+    list-style: square outside;
+    text-decoration: none;
+}
+
+
+
+
+section {
+  max-width:1440px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: space-around;
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+
+.astro {
+  max-width:1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0px 0px 50px 0px;
+ /* margin: 0px 0px 0px 50px;*/
+}
+
+#astrologycircles {
+  max-width:1440px;
+  width:100%;
+  display: inline-block;
+  padding: 35px 15px 65px 15px;
+  justify-content: space-between;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+#astro {
+  font-size: 3em;
+  font-family: "Nunito" 200;
+  color: black;
+  padding: none;
+  margin: none;
+  max-width:1440px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0px 0px 50px 0px;
+}
+
+/*// HOME PAGE //*/
+#astrologycircles a {
+  color: #FFF;
+  padding: 0px;
+  font-size: .000000000000001em;
+}
+
+#astrologycircles :hover a {
+  color: #000;
+  padding: 0px;
+  font-size: 1em;
+}
+
+/*#astrology {
+  display: block;
+  flex: 12;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
+
+}*/
+
+#aquarius {
+  display: inline-flex;
+  background: url(../images/aquarius.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#pisces {
+  display: inline-flex;
+  background: url(../images/pisces.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#aires {
+  display: inline-flex;
+  background: url(../images/aires.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+}
+
+#taurus {
+  display: inline-flex;
+  background: url(../images/taurus.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#gemini {
+  display: inline-flex;
+  background: url(../images/gemini.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#cancer {
+  display: inline-flex;
+  background: url(../images/cancer.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#leo {
+  display: inline-flex;
+  background: url(../images/leo.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#virgo {
+  display: inline-flex;
+  background: url(../images/virgo.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#libra {
+  display: inline-flex;
+  background: url(../images/libra.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#scorpio {
+  display: inline-flex;
+  background: url(../images/scorpio.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#sagittarius {
+  display: inline-flex;
+  background: url(../images/sagittarius.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+#capricorn {
+  display: inline-flex;
+  background: url(../images/capricorn.jpg) no-repeat center;
+  background-size: cover;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 15px;
+
+}
+
+/*// AQUARIUS PAGE //*/
+
+#aquariuspage {
+  display: inline-flex;
+  background: url(../images/aquarius.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// AIRES PAGE //*/
+
+#airespage {
+  display: inline-flex;
+  background: url(../images/aires.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// PISCES PAGE //*/
+
+#piscespage {
+  display: inline-flex;
+  background: url(../images/pisces.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// TAURUS PAGE //*/
+
+#tauruspage {
+  display: inline-flex;
+  background: url(../images/taurus.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// GEMINI PAGE //*/
+
+#geminipage {
+  display: inline-flex;
+  background: url(../images/gemini.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// CANCER PAGE //*/
+
+#cancerpage {
+  display: inline-flex;
+  background: url(../images/cancer.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// LEO PAGE//*/
+
+#leopage {
+  display: inline-flex;
+  background: url(../images/leo.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// VIRGO PAGE //*/
+
+#virgopage {
+  display: inline-flex;
+  background: url(../images/virgo.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// LIBRA PAGE //*/
+
+#librapage {
+  display: inline-flex;
+  background: url(../images/libra.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// SCORPIO PAGE //*/
+
+#scorpiopage {
+  display: inline-flex;
+  background: url(../images/scorpio.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/*// SAGITTARIUS PAGE //*/
+
+#sagittariuspage {
+  display: inline-flex;
+  background: url(../images/sagittarius.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+
+/*// CAPRICORN PAGE //*/
+
+#capricornpage {
+  display: inline-flex;
+  background: url(../images/capricorn.jpg) no-repeat center;
+  background-size: cover;
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  color: rgba(1,1,1,10);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+
+
+/*// FOOTER //*/
+
+#logo {
+  background: url(../images/astrowhite_sm.jpg) no-repeat center;
+  width: 224px;
+  height: 24px;
+  padding: 30px;
+  display: block;
+  margin: 5px;
+  position: absolute;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+#footerlogo {
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/*// CONTACT FORM //*/
+
+.button {
+  border-radius: 5px;
+  font-weight: 900;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  color:#fff;
+}
+
+#contact{
+  justify-content: left;
+}
+
+#contact h2{
+  text-align:left;
+  margin: 3em auto;
+
+}
+#contact label{
+  text-align:left;
+  margin: 2em 0;
+  font-style: 200;
+}
+#contact form {
+  width: 75%;
+  margin: 3em auto;
+}
+#contact form .row{
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
+}
+
+#contact .radios {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 5px;
+}
+
+
+#contact .row label, #contact .row input, #contact .row select, #contact .row div {
+  width: 48%;
+  text-indent:.25em;
+}
+#contact .radios label {
+  width: auto;
+}
+ #contact .row input[type=radio]{
+  width: auto;
+ }
+
+#contact button {
+  margin: 0 auto;
+  border: none;
+}
+
+
+#contact label {
+  text-align: left;
+}
+
